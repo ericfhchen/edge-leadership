@@ -245,14 +245,14 @@ jobPostsAll.filter({
 })();
 
 // "No Matches Found" Text Replace
-$(".job-posts-list").on('DOMNodeInserted', function (e) {
-    let $newItem = $(e.target);
-    if ($newItem.hasClass('filter-empty-message')) {
-        $newItem.text('No new opportunities found.');
-    } else {
-        $newItem.text('')
-    }
-});
+// $(".job-posts-list").on('DOMNodeInserted', function (e) {
+//     let $newItem = $(e.target);
+//     if ($newItem.hasClass('filter-empty-message')) {
+//         $newItem.text('No new opportunities found.');
+//     } else {
+//         $newItem.text('')
+//     }
+// });
 
 // MY APPLICATIONS – Reverse Sort Application Lists
 // immediately/self invoked function. This function executes right away
