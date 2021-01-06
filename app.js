@@ -6,6 +6,7 @@
     // Get the member attributes
     var memberSchool = member["school"]
     var memberYear = member["year"]
+    var memberDepartment = member["department"]
         
     // LGBTQ Filter Setup
     var memberLgbtqRaw = member["lgbtq"]
@@ -91,6 +92,7 @@
     
     // Find the button (it can be a link block or link) by class name
     var schoolFilter = document.querySelector('.filter-btn-school'); 
+    var departmentFilter = document.querySelector('.filter-btn-department'); 
     var yearFilter = document.querySelector('.filter-btn-year'); 
     var lgbtqFilter = document.querySelector('.filter-btn-lgbtq'); 
     var genderFilter = document.querySelector('.filter-btn-gender'); 
@@ -106,6 +108,7 @@
     
     // set the 'filter-by' property of the button (this is needed for the Finsweet library  
     schoolFilter.setAttribute('filter-by', memberSchool);
+    departmentFilter.setAttribute('filter-by', memberDepartment);
     yearFilter.setAttribute('filter-by', memberYear); 
     lgbtqFilter.setAttribute('filter-by', memberLgbtq); 
     genderFilter.setAttribute('filter-by', memberGender); 
