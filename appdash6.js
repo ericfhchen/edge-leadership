@@ -11,7 +11,7 @@
     // LGBTQ Filter Setup
     var memberLgbtqRaw = member["lgbtq"]
     var memberLgbtq
-      if (memberLgbtqRaw == "Prefer not to say") {
+      if (memberLgbtqRaw == "lgbtq-Prefer not to say") {
         memberLgbtq = "";
       } else {
         memberLgbtq = memberLgbtqRaw;
@@ -33,7 +33,7 @@
     // Disability Filter Setup
     var memberDisabilityRaw = member["disabilities"]
     var memberDisability
-      if (memberDisabilityRaw == "Prefer not to say") {
+      if (memberDisabilityRaw == "disabled-Prefer not to say") {
         memberDisability = "";
       } else {
         memberDisability = memberDisabilityRaw;
